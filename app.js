@@ -19,3 +19,10 @@ function changePicture()
 	$('img').replaceWith('<img src="http://lorempixel.com/350/150/animals/" alt="Placeholder Image">');
 }
 $(changePicture);
+
+//add the variables 
+var listElements;
+
+// get all the list elements on a page and print them to the console
+listElements = $("li");
+console.log(listElements);
