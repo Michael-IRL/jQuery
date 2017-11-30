@@ -22,12 +22,17 @@ $(changePicture);
 
 //add the variables 
 var listElements;
-var articleItems
+var articleItems;
+var nav;
 
 // get all the list elements on a page and print them to the console
 listElements = $("li");
 console.log(listElements);
 
-//get all the elements with article item as there class 
+//get all the elements with article item as there class and print them to the console
 articleItems = $(".article-item");
 console.log(articleItems);
+
+//get all the nav elements on the page by there id and print them to the console
+nav = $('#nav');
+console.log(nav);
