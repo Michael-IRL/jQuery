@@ -13,3 +13,10 @@ http://lorempixel.com/350/150/animals/
 Good luck!
 
 */
+// create a function to be called when the DOM loads
+function changePicture()
+{
+	//Repalce the img tag with the new one. *NOTE this will change all img tags.
+	$('img').replaceWith('<img src="http://lorempixel.com/350/150/animals/" alt="Placeholder Image">');
+}
+$(changePicture);
