@@ -36,3 +36,31 @@ console.log(articleItems);
 //get all the nav elements on the page by there id and print them to the console
 nav = $('#nav');
 console.log(nav);
+
+/**  DOM navigation how to traverse the DOM using jQery selectors **/
+//get the element with areticle-list as it's class.
+var articleList = $('.article-list');
+
+// get the element with tag h1 that is the sibling (same layer with the same parent)
+// of the element that has class article-list.
+var h1 = articleList.siblings("h1");
+
+// get all the element that are offspring of article-list, and also get there offsping and so on
+// must have a selector paramitor passed to it '*' is the wild card.
+var kids = articleList.find("*");
+
+// get the immediate offsping of the element with article-list as it's class.
+var children = articleList.children();
+
+// get all the ancestors of the element with class article-list
+var parents = articleList.parents("div");
+
+// get the immediate parent of the element with class article-list
+var mom = articleList.parent();
+
+// print of all the element lists that where found by traversal
+console.log(h1);
+console.log(kids);
+console.log(children);
+console.log(parents);
+console.log(mom);
