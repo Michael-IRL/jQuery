@@ -67,8 +67,21 @@ console.log(mom);
 
 /**  Use jQuery to manipulate the DOM   **/
 // use toggleClass to toggle a class on and off an element.
-// get the element that has the class featured.
+// get the element that has the class featured. Print it's state 
 var featuredArticle = $(".featured");
+console.log(featuredArticle);
 
 // toggle the class on the element.
 featuredArticle.toggleClass("featured");
+
+// use .next() to find the featuredArticles next sibling. Print it's state
+var article3 = featuredArticle.next();
+console.log(article3);
+
+// toggle the calss featured on to article 3 
+article3.toggleClass("featured");
+
+// print both elements state now
+console.log(featuredArticle);
+console.log(article3);
+
