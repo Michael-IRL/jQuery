@@ -130,3 +130,10 @@ function numberAdder()
 // Use .each() to loop through all element in a returned element list.
 $('p').each(numberAdder);
 
+// Create a listern to add the class 'success' to the body
+$('#my-button').on('click',function ()
+{
+    $('#my-button').remove();
+    $('body').addClass('success');
+});
+
