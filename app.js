@@ -110,8 +110,23 @@ $('#input').on('change', function()
     h1.text(val);
 });
 
-// Get the unorder List that is a child of the element that has class .article-item
-// then remove it from the DOM
+// Get the unorder List that is a child of the element that has class 
+//.article-item, then remove it from the DOM
 var uorlist = $('.article-item').children('ul');
 uorlist.remove();
+
+// create a function to get the lenght of a bock of text,
+// then add that number to the end of the block of text.
+function numberAdder()
+{
+    var text, number;
+    text = $(this).text();
+    number = text.length;
+    console.log(number);
+    
+    $(this).text(text+" "+number);
+}
+
+// Use .each() to loop through all element in a returned element list.
+$('p').each(numberAdder);
 
