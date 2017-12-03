@@ -64,3 +64,11 @@ console.log(kids);
 console.log(children);
 console.log(parents);
 console.log(mom);
+
+/**  Use jQuery to manipulate the DOM   **/
+// use toggleClass to toggle a class on and off an element.
+// get the element that has the class featured.
+var featuredArticle = $(".featured");
+
+// toggle the class on the element.
+featuredArticle.toggleClass("featured");
