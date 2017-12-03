@@ -85,3 +85,10 @@ article3.toggleClass("featured");
 console.log(featuredArticle);
 console.log(article3);
 
+// use .first() to get the first link 
+var navList = $("a").first();
+
+// use .attr() to add a key value pair to the element in navList. Print the state
+navList.attr("href", "#1");
+console.log(navList);
+
