@@ -110,3 +110,8 @@ $('#input').on('change', function()
     h1.text(val);
 });
 
+// Get the unorder List that is a child of the element that has class .article-item
+// then remove it from the DOM
+var uorlist = $('.article-item').children('ul');
+uorlist.remove();
+
