@@ -136,4 +136,11 @@ $('#my-button').on('click',function ()
     $('#my-button').remove();
     $('body').addClass('success');
 });
+/* same with a convenience method
+$('#my-button').click(function ()
+{
+    $('#my-button').remove();
+    $('body').addClass('success');
+});
+*/
 
