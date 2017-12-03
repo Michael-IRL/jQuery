@@ -99,3 +99,14 @@ var article4 = article3.next();
 // ** This is bad pratice, always try to solve with css or javascript.
 article4.css("font-size", "20px");
 
+// Use a listener on the input box, and change the value of h1 to what is 
+// typed in to the input box useing .text()
+$('#input').on('change', function() 
+{
+    var val;
+    val = $('#input').val();
+    console.log(val);
+    var h1 = $('.articles').children('h1');
+    h1.text(val);
+});
+
