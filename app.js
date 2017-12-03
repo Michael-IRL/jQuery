@@ -92,3 +92,10 @@ var navList = $("a").first();
 navList.attr("href", "#1");
 console.log(navList);
 
+// get the next sibling to article3
+var article4 = article3.next();
+
+// Use .css() to alter a style key pair.
+// ** This is bad pratice, always try to solve with css or javascript.
+article4.css("font-size", "20px");
+
