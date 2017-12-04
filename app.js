@@ -144,3 +144,16 @@ $('#my-button').click(function ()
 });
 */
 
+// Event Delegation listener this can be use to monitor a parent element, 
+// that lets you listen to the child elements. So if a new child is created
+// after the DOM is loaded alistener can take effect on it. 
+// Also if there are many elements of this type that are being listened to you 
+// only create one instance of the listener.
+// https://learn.jquery.com/events/event-delegation/
+
+// Syntax to create a Event Delegation listener
+// This listens to clicks on the a tags that are children of the element with class nav-list
+$('.nav-list').on('click','a',function()
+{
+	console.log(this);
+});
